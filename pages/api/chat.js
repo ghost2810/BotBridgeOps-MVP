@@ -9,3 +9,8 @@ export default function handler(req, res) {
   }
   res.status(200).json({ reply });
 }
+if (message.toLowerCase().includes('your name')) {
+  reply = "I'm BotBridge, your friendly MVP chatbot!";
+} else if (message.toLowerCase().includes('do')) {
+  reply = "I can answer simple questions and help you learn!";
+}
